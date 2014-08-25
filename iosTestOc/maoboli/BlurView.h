@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BlurView.h
 //  iosTestOc
 //
 //  Created by gaoyong on 14-8-20.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface BlurView : UIView
 
 @end

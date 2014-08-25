@@ -7,12 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "FyNavigationController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    FyNavigationController *nav = [[FyNavigationController alloc] initWithRootViewController:[HomeViewController new]];
+    
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							
