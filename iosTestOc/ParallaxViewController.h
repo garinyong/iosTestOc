@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ParallaxViewController : UIViewController
-
+{
+    UIImageView *imgView;
+    
+    UIView *containerView;
+}
 @end

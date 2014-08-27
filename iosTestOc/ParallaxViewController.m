@@ -27,6 +27,33 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 80, 320, 200)];
+    containerView.backgroundColor = [UIColor clearColor];
+    containerView.clipsToBounds = YES;
+    [self.view addSubview:containerView];
+    
+    imgView = [[UIImageView alloc] initWithFrame:containerView.bounds];
+    imgView.contentMode = UIViewContentModeCenter;
+    imgView.image = [UIImage imageNamed:@"cloud.png"];
+//    imgView.transform = CGAffineTransformMakeScale(3, 3);
+    [containerView addSubview:imgView];
+    
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(320/2-30,320,60, 44);
+    btn.backgroundColor = [UIColor blueColor];
+    [btn setTitle:@"click" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+-(void) btnClick
+{
+    [UIView animateWithDuration:3 animations:^{
+        imgView.transform = CGAffineTransformMakeScale(3, 3);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

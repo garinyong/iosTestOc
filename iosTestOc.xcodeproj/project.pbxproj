@@ -11,6 +11,7 @@
 		EE11D26319AC5945007B3D5C /* CoinView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11D26219AC5945007B3D5C /* CoinView.m */; };
 		EE1E40CC19A5EC3100F8C1FB /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1E40CB19A5EC3100F8C1FB /* AnimationViewController.m */; };
 		EE2CCA7F19AD91CA000C1490 /* ParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CCA7E19AD91CA000C1490 /* ParallaxViewController.m */; };
+		EE2CCA8319ADCBD2000C1490 /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE2CCA8219ADCBD2000C1490 /* cloud@2x.png */; };
 		EE54DB3319A5C15B003A115C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3119A5C15B003A115C /* HomeViewController.m */; };
 		EE54DB3419A5C15B003A115C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE54DB3219A5C15B003A115C /* HomeViewController.xib */; };
 		EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3719A5CDAA003A115C /* BlurView.m */; };
@@ -55,6 +56,7 @@
 		EE1E40CB19A5EC3100F8C1FB /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		EE2CCA7D19AD91CA000C1490 /* ParallaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxViewController.h; sourceTree = "<group>"; };
 		EE2CCA7E19AD91CA000C1490 /* ParallaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxViewController.m; sourceTree = "<group>"; };
+		EE2CCA8219ADCBD2000C1490 /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
 		EE54DB3019A5C15B003A115C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		EE54DB3119A5C15B003A115C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		EE54DB3219A5C15B003A115C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 		EECE42F619A4903500E1BCBA /* img */ = {
 			isa = PBXGroup;
 			children = (
+				EE2CCA8219ADCBD2000C1490 /* cloud@2x.png */,
 				EECE42F719A4903500E1BCBA /* bg1.jpg */,
 			);
 			name = img;
@@ -313,6 +316,7 @@
 				EECE42D819A4835000E1BCBA /* Images.xcassets in Resources */,
 				EE54DB3419A5C15B003A115C /* HomeViewController.xib in Resources */,
 				EECE42CA19A4835000E1BCBA /* InfoPlist.strings in Resources */,
+				EE2CCA8319ADCBD2000C1490 /* cloud@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
