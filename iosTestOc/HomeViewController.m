@@ -11,6 +11,10 @@
 #import "AnimationViewController.h"
 #import "ExampleViewController.h"
 #import "ZhimaViewController.h"
+#import "FanYeViewController.h"
+#import "juHuaViewController.h"
+#import "CoinViewController.h"
+#import "ParallaxViewController.h"
 
 @interface HomeViewController ()
 
@@ -32,7 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    dataArr = [NSArray arrayWithObjects:@"mao bo li",@"jerry",@"zhang jia",@"芝麻",nil];
+    dataArr = [NSArray arrayWithObjects:@"mao bo li",@"jerry",@"zhang jia",@"oooye",@"newlity",
+               @"juhua",@"coinhua",@"parallax",nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -101,6 +106,30 @@
         case 3:
         {
             ZhimaViewController *vc = [ZhimaViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 4:
+        {
+            FanYeViewController *vc = [FanYeViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 5:
+        {
+            juHuaViewController *vc = [juHuaViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 6:
+        {
+            CoinViewController *vc = [CoinViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 7:
+        {
+            ParallaxViewController *vc = [ParallaxViewController new];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

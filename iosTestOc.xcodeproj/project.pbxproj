@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE11D26019AC58BF007B3D5C /* CoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11D25F19AC58BF007B3D5C /* CoinViewController.m */; };
+		EE11D26319AC5945007B3D5C /* CoinView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11D26219AC5945007B3D5C /* CoinView.m */; };
 		EE1E40CC19A5EC3100F8C1FB /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1E40CB19A5EC3100F8C1FB /* AnimationViewController.m */; };
+		EE2CCA7F19AD91CA000C1490 /* ParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CCA7E19AD91CA000C1490 /* ParallaxViewController.m */; };
 		EE54DB3319A5C15B003A115C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3119A5C15B003A115C /* HomeViewController.m */; };
 		EE54DB3419A5C15B003A115C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE54DB3219A5C15B003A115C /* HomeViewController.xib */; };
 		EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3719A5CDAA003A115C /* BlurView.m */; };
 		EE54DB3B19A5CDAA003A115C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3919A5CDAA003A115C /* ViewController.m */; };
+		EE8562C019AB05AB00850005 /* FanYeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8562BF19AB05AB00850005 /* FanYeViewController.m */; };
+		EE8562C619AB3AF300850005 /* juHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8562C519AB3AF300850005 /* juHuaViewController.m */; };
 		EEA5046619A723C800C0F246 /* FyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5046519A723C800C0F246 /* FyNavigationController.m */; };
 		EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5046819A7241900C0F246 /* ExampleViewController.m */; };
 		EEA5046B19A72BBB00C0F246 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA5046A19A72BBB00C0F246 /* QuartzCore.framework */; };
@@ -42,8 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE11D25E19AC58BF007B3D5C /* CoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinViewController.h; sourceTree = "<group>"; };
+		EE11D25F19AC58BF007B3D5C /* CoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinViewController.m; sourceTree = "<group>"; };
+		EE11D26119AC5945007B3D5C /* CoinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinView.h; sourceTree = "<group>"; };
+		EE11D26219AC5945007B3D5C /* CoinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinView.m; sourceTree = "<group>"; };
 		EE1E40CA19A5EC3100F8C1FB /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		EE1E40CB19A5EC3100F8C1FB /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		EE2CCA7D19AD91CA000C1490 /* ParallaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxViewController.h; sourceTree = "<group>"; };
+		EE2CCA7E19AD91CA000C1490 /* ParallaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxViewController.m; sourceTree = "<group>"; };
 		EE54DB3019A5C15B003A115C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		EE54DB3119A5C15B003A115C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		EE54DB3219A5C15B003A115C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -51,6 +62,11 @@
 		EE54DB3719A5CDAA003A115C /* BlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurView.m; sourceTree = "<group>"; };
 		EE54DB3819A5CDAA003A115C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EE54DB3919A5CDAA003A115C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE8562BE19AB05AB00850005 /* FanYeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanYeViewController.h; sourceTree = "<group>"; };
+		EE8562BF19AB05AB00850005 /* FanYeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanYeViewController.m; sourceTree = "<group>"; };
+		EE8562C119AB180B00850005 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		EE8562C419AB3AF300850005 /* juHuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juHuaViewController.h; sourceTree = "<group>"; };
+		EE8562C519AB3AF300850005 /* juHuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = juHuaViewController.m; sourceTree = "<group>"; };
 		EEA5046419A723C800C0F246 /* FyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FyNavigationController.h; sourceTree = "<group>"; };
 		EEA5046519A723C800C0F246 /* FyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FyNavigationController.m; sourceTree = "<group>"; };
 		EEA5046719A7241900C0F246 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
@@ -164,6 +180,17 @@
 				EEA5046819A7241900C0F246 /* ExampleViewController.m */,
 				EEAEBB6E19A74F6500C5EFF5 /* ZhimaViewController.h */,
 				EEAEBB6F19A74F6500C5EFF5 /* ZhimaViewController.m */,
+				EE8562BE19AB05AB00850005 /* FanYeViewController.h */,
+				EE8562BF19AB05AB00850005 /* FanYeViewController.m */,
+				EE8562C119AB180B00850005 /* define.h */,
+				EE8562C419AB3AF300850005 /* juHuaViewController.h */,
+				EE8562C519AB3AF300850005 /* juHuaViewController.m */,
+				EE11D25E19AC58BF007B3D5C /* CoinViewController.h */,
+				EE11D25F19AC58BF007B3D5C /* CoinViewController.m */,
+				EE11D26119AC5945007B3D5C /* CoinView.h */,
+				EE11D26219AC5945007B3D5C /* CoinView.m */,
+				EE2CCA7D19AD91CA000C1490 /* ParallaxViewController.h */,
+				EE2CCA7E19AD91CA000C1490 /* ParallaxViewController.m */,
 			);
 			path = iosTestOc;
 			sourceTree = "<group>";
@@ -304,12 +331,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8562C619AB3AF300850005 /* juHuaViewController.m in Sources */,
 				EECE42D019A4835000E1BCBA /* AppDelegate.m in Sources */,
 				EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */,
+				EE11D26019AC58BF007B3D5C /* CoinViewController.m in Sources */,
 				EEAEBB7019A74F6500C5EFF5 /* ZhimaViewController.m in Sources */,
+				EE2CCA7F19AD91CA000C1490 /* ParallaxViewController.m in Sources */,
 				EE54DB3319A5C15B003A115C /* HomeViewController.m in Sources */,
+				EE8562C019AB05AB00850005 /* FanYeViewController.m in Sources */,
 				EE1E40CC19A5EC3100F8C1FB /* AnimationViewController.m in Sources */,
 				EEA5046619A723C800C0F246 /* FyNavigationController.m in Sources */,
+				EE11D26319AC5945007B3D5C /* CoinView.m in Sources */,
 				EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */,
 				EECE42CC19A4835000E1BCBA /* main.m in Sources */,
 				EE54DB3B19A5CDAA003A115C /* ViewController.m in Sources */,

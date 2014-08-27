@@ -62,19 +62,21 @@
 -(void) drawMyShape
 {
     UIBezierPath *path = [UIBezierPath bezierPath];
-//    [path addArcWithCenter:CGPointMake(160, self.view.frame.size.height/2) radius:50 startAngle:0 endAngle:2*M_PI clockwise:YES];
+    [path addArcWithCenter:CGPointMake(160, self.view.frame.size.height/2) radius:50 startAngle:0 endAngle:2*M_PI clockwise:YES];
     
-    [path addCurveToPoint:CGPointMake(160, 100) controlPoint1:CGPointMake(200, 210) controlPoint2:CGPointMake(150, 310)];
+//    [path addCurveToPoint:CGPointMake(160, 100) controlPoint1:CGPointMake(200, 210) controlPoint2:CGPointMake(150, 310)];
     
     CAShapeLayer *caslayer = [CAShapeLayer layer];
     caslayer.frame = self.view.frame;
     caslayer.path = path.CGPath;
     caslayer.strokeColor = [UIColor greenColor].CGColor;
     caslayer.fillColor = [UIColor clearColor].CGColor;
-    caslayer.lineCap = kCALineCapSquare;
+    caslayer.lineCap = kCALineCapRound;
     caslayer.lineWidth = 2;
     caslayer.strokeStart = 0;
     [self.view.layer addSublayer:caslayer];
+    
+    return;
     
     CABasicAnimation *ba = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     ba.duration = 1;

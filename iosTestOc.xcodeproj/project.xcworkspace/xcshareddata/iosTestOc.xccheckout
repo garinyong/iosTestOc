@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E1FB23D0-CF19-4971-A877-DAD54B0FCA15</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iosTestOc</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9A42FCDE-270C-4CF8-AEEC-232980824177</key>
+		<string>https://github.com/garinyong/iosTestOc.git</string>
+		<key>D24CB204-B772-43F3-90A1-19E20A0D1F6E</key>
+		<string>https://github.com/garinyong/iosTestOc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iosTestOc.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9A42FCDE-270C-4CF8-AEEC-232980824177</key>
+		<string>../../iosTestOc</string>
+		<key>D24CB204-B772-43F3-90A1-19E20A0D1F6E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/garinyong/iosTestOc.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D24CB204-B772-43F3-90A1-19E20A0D1F6E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D24CB204-B772-43F3-90A1-19E20A0D1F6E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iosTestOc</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9A42FCDE-270C-4CF8-AEEC-232980824177</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iosTestOc</string>
+		</dict>
+	</array>
+</dict>
+</plist>

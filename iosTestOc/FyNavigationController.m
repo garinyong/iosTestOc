@@ -9,7 +9,7 @@
 #import "FyNavigationController.h"
 #import <QuartzCore/QuartzCore.h>
 
-#define degreeToRadians(x) (M_PI * (x) / 180.0)
+
 
 @interface FyNavigationController ()
 
