@@ -16,6 +16,8 @@
 {
     // Override point for customization after application launch.
     
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     FyNavigationController *nav = [[FyNavigationController alloc] initWithRootViewController:[HomeViewController new]];
     
     self.window.rootViewController = nav;

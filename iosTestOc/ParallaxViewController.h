@@ -17,5 +17,7 @@
     float picWidth;
     
     float picHeight;
+    
+    CGPoint startPoint;
 }
 @end
