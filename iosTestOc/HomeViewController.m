@@ -15,6 +15,7 @@
 #import "juHuaViewController.h"
 #import "CoinViewController.h"
 #import "ParallaxViewController.h"
+#import "bsierViewController.h"
 
 @interface HomeViewController ()
 
@@ -37,7 +38,7 @@
     // Do any additional setup after loading the view from its nib.
     
     dataArr = [NSArray arrayWithObjects:@"mao bo li",@"jerry",@"zhang jia",@"oooye",@"newlity",
-               @"juhua",@"coinhua",@"parallax",nil];
+               @"juhua",@"coinhua",@"parallax",@"basier",nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -130,6 +131,12 @@
         case 7:
         {
             ParallaxViewController *vc = [ParallaxViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 8:
+        {
+            bsierViewController *vc = [bsierViewController new];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

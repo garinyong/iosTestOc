@@ -13,5 +13,9 @@
     UIImageView *imgView;
     
     UIView *containerView;
+    
+    float picWidth;
+    
+    float picHeight;
 }
 @end

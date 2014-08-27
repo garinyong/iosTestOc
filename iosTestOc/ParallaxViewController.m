@@ -29,6 +29,9 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
+    picWidth = 512;
+    picHeight = 348;
+    
     containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 80, 320, 200)];
     containerView.backgroundColor = [UIColor clearColor];
     containerView.clipsToBounds = YES;
@@ -51,9 +54,56 @@
 
 -(void) btnClick
 {
-    [UIView animateWithDuration:3 animations:^{
-        imgView.transform = CGAffineTransformMakeScale(3, 3);
-    }];
+//    [UIView animateWithDuration:3 animations:^{
+//        imgView.layer.transform = CATransform3DTranslate(imgView.layer.transform,100,0,0);
+//    }];
+    
+    
+    
+
+}
+
+-(void) annimateWithTransform
+{
+    float fromX = imgView.layer.position.x;
+    float fromY = imgView.layer.position.y;
+    
+    float maxToX = picWidth/2;
+    float maxToY = picHeight/2;
+    
+    //随机三个点
+//    CGPoint p1 = CGPointMake(arc4random(), <#CGFloat y#>)
+    
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(fromX, fromY)];
+    [path addCurveToPoint:CGPointMake(picWidth/2, picHeight/2) controlPoint1:CGPointMake(180, 150) controlPoint2:CGPointMake(200, 180)];
+    
+    NSLog(@"%f  %f",imgView.layer.position.x,imgView.layer.position.y);
+    
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    [animation setPath:path.CGPath];
+    animation.duration = 20.0f;
+    
+    CGFloat from3DScale = 1 + arc4random() % 10 *0.1;
+    CGFloat to3DScale = from3DScale * 0.8;
+    CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    scaleAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 1)],[NSValue valueWithCATransform3D:CATransform3DMakeScale(from3DScale, from3DScale, from3DScale)], [NSValue valueWithCATransform3D:CATransform3DMakeScale(to3DScale, to3DScale, to3DScale)]];
+    scaleAnimation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut], [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+    
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    group.delegate = self;
+    group.duration = 10;
+    group.fillMode = kCAFillModeForwards;
+    group.removedOnCompletion = NO;
+    group.animations = @[animation];
+    [imgView.layer addAnimation:group forKey:@"position and transform"];
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    if (flag) {
+        NSLog(@"wanchen");
+    }
 }
 
 - (void)didReceiveMemoryWarning

@@ -61,6 +61,31 @@
 
 -(void) drawMyShape
 {
+    // Create an oval shape to draw.
+    UIBezierPath *apath = [UIBezierPath bezierPath];
+    
+    // Set the render colors
+    [[UIColor blackColor] setStroke];
+    [[UIColor redColor] setFill];
+    
+    [apath moveToPoint:CGPointMake(160, 100)];
+    [apath addCurveToPoint:CGPointMake(300, 200) controlPoint1:CGPointMake(100, 50) controlPoint2:CGPointMake(200, 140)];
+    
+    [apath stroke];
+    
+    
+//    // Adjust the drawing options as needed.
+//    aPath.lineWidth = 5;
+//    
+//    // Fill the path before stroking it so that the fill
+//    // color does not obscure the stroked line.
+////    [aPath fill];
+//    [aPath stroke];
+    
+    // Restore the graphics state before drawing any other content.
+    //CGContextRestoreGState(aRef);
+    
+    return;
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path addArcWithCenter:CGPointMake(160, self.view.frame.size.height/2) radius:50 startAngle:0 endAngle:2*M_PI clockwise:YES];
     
