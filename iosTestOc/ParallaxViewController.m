@@ -32,13 +32,13 @@
     picWidth = 512;
     picHeight = 348;
     
-    containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 80, 320, 200)];
+    containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 320, 200)];
     containerView.backgroundColor = [UIColor clearColor];
     containerView.clipsToBounds = YES;
     [self.view addSubview:containerView];
     
     imgView = [[UIImageView alloc] initWithFrame:containerView.bounds];
-    imgView.contentMode = UIViewContentModeCenter;
+    imgView.contentMode = UIViewContentModeLeft;
     imgView.image = [UIImage imageNamed:@"cloud.png"];
 //    imgView.transform = CGAffineTransformMakeScale(3, 3);
     [containerView addSubview:imgView];
@@ -54,106 +54,71 @@
 
 -(void) btnClick
 {
-//    [UIView animateWithDuration:3 animations:^{
-//        imgView.layer.transform = CATransform3DTranslate(imgView.layer.transform,100,0,0);
-//    }];
-    
-    [self annimateWithTransform:YES];
-    
-    
-//    imgView.layer.position = CGPointMake(imgView.layer.position.x+10, imgView.layer.position.y);
-//    
-//    NSLog(@"%f  %f",imgView.layer.position.x,imgView.layer.position.y);
+    [self annimateWithTransform];
 }
 
--(void) annimateWithTransform:(BOOL) isFirst
+-(void) annimateWithTransform
 {
-    //起点
-    if (isFirst)
-    {
-        startPoint = imgView.layer.position;
-    }
-    
-    //随机三个点
-    CGPoint endPoint = [self getRandomPoint:startPoint];
-    CGPoint p1 = [self getRandomPoint:startPoint];
-    CGPoint p2 = [self getRandomPoint:startPoint];
-    
-    NSLog(@"start x:%f start y:%f",startPoint.x,startPoint.y);
-    NSLog(@"endPoint x:%f endPoint y:%f",endPoint.x,endPoint.y);
-    NSLog(@"p1 x:%f p1 y:%f",p1.x,p1.y);
-    NSLog(@"p2 x:%f p2 y:%f",p2.x,p2.y);
+    CGPoint startPoint = CGPointMake(imgView.layer.position.x, imgView.layer.position.y);
     
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:startPoint];
-    [path addCurveToPoint:endPoint controlPoint1:p1 controlPoint2:p2];
-//    [path addCurveToPoint:endPoint controlPoint1:p1 controlPoint2:p2];
+
+    //方向
+    BOOL isToLeft = YES;
     
-    //记录
-    startPoint = endPoint;
+    CGPoint endPoint;
+    CGPoint p1;
+    CGPoint p2;
+    //移动的最大距离(和初始位置有关)
+    int maxX = (picWidth - imgView.layer.frame.size.width);
+    int maxY = 20;
+    if (isToLeft)
+    {
+        endPoint = CGPointMake(startPoint.x-maxX, arc4random()%100%2==0?startPoint.y+arc4random()%maxY:startPoint.y-arc4random()%maxY);
+        p1 = CGPointMake(startPoint.x - arc4random()%maxX, arc4random()%100%2==0?startPoint.y+arc4random()%maxY:startPoint.y-arc4random()%maxY);
+        p2 = CGPointMake(startPoint.x - arc4random()%maxX, arc4random()%100%2==0?startPoint.y+arc4random()%maxY:startPoint.y-arc4random()%maxY);
+    }
+    else
+    {
+        endPoint = CGPointMake(startPoint.x+maxX, arc4random()%100%2==0?startPoint.y+arc4random()%maxY:startPoint.y-arc4random()%maxY);
+        p1 = CGPointMake(startPoint.x + arc4random()%maxX, arc4random()%100%2==0?startPoint.y+arc4random()%maxY:startPoint.y-arc4random()%maxY);
+        p2 = CGPointMake(startPoint.x + arc4random()%maxX, arc4random()%100%2==0?startPoint.y+arc4random()%maxY:startPoint.y-arc4random()%maxY);
+    }
+    
+    NSLog(@"startPoint x:%f startPoint y:%f",startPoint.x,startPoint.y);
+    NSLog(@"p1 x:%f p1 y:%f",p1.x,p1.y);
+    NSLog(@"p2 x:%f p2 y:%f",p2.x,p2.y);
+    NSLog(@"endPoint x:%f endPoint y:%f",endPoint.x,endPoint.y);
+    
+    [path addCurveToPoint:endPoint controlPoint1:p1 controlPoint2:p2];
     
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     [animation setPath:path.CGPath];
-    animation.duration = 20.0f;
     
-    CGFloat from3DScale = 1 + arc4random() % 10 *0.1;
+    CGFloat from3DScale = 1 + arc4random() % 2 *0.1;
     CGFloat to3DScale = from3DScale * 0.8;
     CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-    scaleAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 1)],[NSValue valueWithCATransform3D:CATransform3DMakeScale(from3DScale, from3DScale, from3DScale)], [NSValue valueWithCATransform3D:CATransform3DMakeScale(to3DScale, to3DScale, to3DScale)]];
-    scaleAnimation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut], [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+    scaleAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 1)],[NSValue valueWithCATransform3D:CATransform3DMakeScale(from3DScale, from3DScale, from3DScale)], [NSValue valueWithCATransform3D:CATransform3DMakeScale(to3DScale, to3DScale, to3DScale)],
+                              [NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 1)]];
+//    scaleAnimation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
     
     CAAnimationGroup *group = [CAAnimationGroup animation];
     group.delegate = self;
-    group.duration = 10;
-    group.fillMode = kCAFillModeForwards;
-    group.removedOnCompletion = NO;
-    group.animations = @[animation];
+    group.duration = 100;
+//    group.fillMode = kCAFillModeForwards;
+//    group.removedOnCompletion = NO;
+    group.animations = @[animation,scaleAnimation];
+    group.autoreverses = YES;
+    group.repeatCount = HUGE_VALL;
     [imgView.layer addAnimation:group forKey:@"position and transform"];
-}
-
--(CGPoint) getRandomPoint:(CGPoint) basicPoint
-{
-    //起点
-    float fromX = imgView.layer.position.x;
-    float fromY = imgView.layer.position.y;
-    //最大移动距离
-    int maxWidth = abs(picWidth/2-fromX);
-    int maxHeight = abs(picHeight/2-fromY);
-    
-    //随机三个点
-    int a= arc4random()%maxWidth;
-    int b = arc4random()%maxHeight;
-    
-    float toX = 0 ,toY = 0;
-    
-    if (arc4random()%100%2==0)
-    {
-        toX = fromX + a;
-    }
-    else
-    {
-        toX= fromX - a;
-    }
-    
-    if (arc4random()%100%2==0)
-    {
-        toY = fromY + b;
-    }
-    else
-    {
-        toY= fromY - b;
-    }
-    
-//    NSLog(@"tox:%f toy:%f",toX,toY);
-    
-    return CGPointMake(toX, toY);
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    if (flag) {
+    if (flag)
+    {
         NSLog(@"wanchen");
-        [self annimateWithTransform:NO];
     }
 }
 

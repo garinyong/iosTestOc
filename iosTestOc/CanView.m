@@ -45,7 +45,7 @@
     float toX = picWidth/2;
     float toY = picHeight/2;
     
-    [apath moveToPoint:CGPointMake(x, y)];
+    [apath moveToPoint:CGPointMake(0, 0)];
     [apath addCurveToPoint:CGPointMake(toX, toY) controlPoint1:CGPointMake(60, 120) controlPoint2:CGPointMake(200, 140)];
     
     apath.lineWidth = 1.0f;
