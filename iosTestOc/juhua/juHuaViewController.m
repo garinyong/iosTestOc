@@ -7,6 +7,7 @@
 //
 
 #import "juHuaViewController.h"
+#import "juHuaView1.h"
 
 @interface juHuaViewController ()
 
@@ -27,6 +28,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor colorWithRed:115/255.0f green:152/255.0f blue:171/255.0f alpha:1];
+    
+    juHuaView1 *juhua = [[juHuaView1 alloc] init];
+    juhua.center = self.view.center;
+    [self.view addSubview:juhua];
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    animation.duration = 1;
+    animation.fromValue = [NSNumber numberWithFloat:0];
+    animation.toValue = [NSNumber numberWithFloat:degreeToRadians(360)];
+    animation.repeatCount = HUGE_VAL;
+    animation.fillMode = kCAFillModeForwards;
+    animation.removedOnCompletion = NO;
+    
+    [juhua.layer addAnimation:animation forKey:@"dfafdafdas"];
+    
 }
 
 - (void)didReceiveMemoryWarning

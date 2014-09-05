@@ -19,11 +19,12 @@
 		EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3719A5CDAA003A115C /* BlurView.m */; };
 		EE54DB3B19A5CDAA003A115C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3919A5CDAA003A115C /* ViewController.m */; };
 		EE8562C019AB05AB00850005 /* FanYeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8562BF19AB05AB00850005 /* FanYeViewController.m */; };
-		EE8562C619AB3AF300850005 /* juHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8562C519AB3AF300850005 /* juHuaViewController.m */; };
 		EEA5046619A723C800C0F246 /* FyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5046519A723C800C0F246 /* FyNavigationController.m */; };
 		EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5046819A7241900C0F246 /* ExampleViewController.m */; };
 		EEA5046B19A72BBB00C0F246 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA5046A19A72BBB00C0F246 /* QuartzCore.framework */; };
 		EEAEBB7019A74F6500C5EFF5 /* ZhimaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAEBB6F19A74F6500C5EFF5 /* ZhimaViewController.m */; };
+		EEC1DAC819B9CDC1009B1082 /* juHuaView1.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC1DAC519B9CDC1009B1082 /* juHuaView1.m */; };
+		EEC1DAC919B9CDC1009B1082 /* juHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC1DAC719B9CDC1009B1082 /* juHuaViewController.m */; };
 		EECE42C019A4835000E1BCBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECE42BF19A4835000E1BCBA /* Foundation.framework */; };
 		EECE42C219A4835000E1BCBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECE42C119A4835000E1BCBA /* CoreGraphics.framework */; };
 		EECE42C419A4835000E1BCBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECE42C319A4835000E1BCBA /* UIKit.framework */; };
@@ -73,8 +74,6 @@
 		EE8562BE19AB05AB00850005 /* FanYeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanYeViewController.h; sourceTree = "<group>"; };
 		EE8562BF19AB05AB00850005 /* FanYeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanYeViewController.m; sourceTree = "<group>"; };
 		EE8562C119AB180B00850005 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
-		EE8562C419AB3AF300850005 /* juHuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juHuaViewController.h; sourceTree = "<group>"; };
-		EE8562C519AB3AF300850005 /* juHuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = juHuaViewController.m; sourceTree = "<group>"; };
 		EEA5046419A723C800C0F246 /* FyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FyNavigationController.h; sourceTree = "<group>"; };
 		EEA5046519A723C800C0F246 /* FyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FyNavigationController.m; sourceTree = "<group>"; };
 		EEA5046719A7241900C0F246 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
@@ -82,6 +81,10 @@
 		EEA5046A19A72BBB00C0F246 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EEAEBB6E19A74F6500C5EFF5 /* ZhimaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhimaViewController.h; sourceTree = "<group>"; };
 		EEAEBB6F19A74F6500C5EFF5 /* ZhimaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhimaViewController.m; sourceTree = "<group>"; };
+		EEC1DAC419B9CDC1009B1082 /* juHuaView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juHuaView1.h; sourceTree = "<group>"; };
+		EEC1DAC519B9CDC1009B1082 /* juHuaView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = juHuaView1.m; sourceTree = "<group>"; };
+		EEC1DAC619B9CDC1009B1082 /* juHuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juHuaViewController.h; sourceTree = "<group>"; };
+		EEC1DAC719B9CDC1009B1082 /* juHuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = juHuaViewController.m; sourceTree = "<group>"; };
 		EECE42BC19A4835000E1BCBA /* iosTestOc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosTestOc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECE42BF19A4835000E1BCBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EECE42C119A4835000E1BCBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -137,6 +140,17 @@
 			path = maoboli;
 			sourceTree = "<group>";
 		};
+		EEC1DAC319B9CDC1009B1082 /* juhua */ = {
+			isa = PBXGroup;
+			children = (
+				EEC1DAC419B9CDC1009B1082 /* juHuaView1.h */,
+				EEC1DAC519B9CDC1009B1082 /* juHuaView1.m */,
+				EEC1DAC619B9CDC1009B1082 /* juHuaViewController.h */,
+				EEC1DAC719B9CDC1009B1082 /* juHuaViewController.m */,
+			);
+			path = juhua;
+			sourceTree = "<group>";
+		};
 		EECE42B319A4835000E1BCBA = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +186,7 @@
 		EECE42C519A4835000E1BCBA /* iosTestOc */ = {
 			isa = PBXGroup;
 			children = (
+				EEC1DAC319B9CDC1009B1082 /* juhua */,
 				EE54DB3519A5CDAA003A115C /* maoboli */,
 				EECE42CE19A4835000E1BCBA /* AppDelegate.h */,
 				EECE42CF19A4835000E1BCBA /* AppDelegate.m */,
@@ -191,8 +206,6 @@
 				EE8562BE19AB05AB00850005 /* FanYeViewController.h */,
 				EE8562BF19AB05AB00850005 /* FanYeViewController.m */,
 				EE8562C119AB180B00850005 /* define.h */,
-				EE8562C419AB3AF300850005 /* juHuaViewController.h */,
-				EE8562C519AB3AF300850005 /* juHuaViewController.m */,
 				EE11D25E19AC58BF007B3D5C /* CoinViewController.h */,
 				EE11D25F19AC58BF007B3D5C /* CoinViewController.m */,
 				EE11D26119AC5945007B3D5C /* CoinView.h */,
@@ -345,8 +358,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE8562C619AB3AF300850005 /* juHuaViewController.m in Sources */,
+				EEC1DAC819B9CDC1009B1082 /* juHuaView1.m in Sources */,
 				EE31166819ADEB7C001DB7A8 /* CanView.m in Sources */,
+				EEC1DAC919B9CDC1009B1082 /* juHuaViewController.m in Sources */,
 				EECE42D019A4835000E1BCBA /* AppDelegate.m in Sources */,
 				EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */,
 				EE11D26019AC58BF007B3D5C /* CoinViewController.m in Sources */,

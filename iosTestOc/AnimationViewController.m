@@ -36,8 +36,8 @@
     
 //    CATransition
     
-//    [self makeAnimation];
-    [self drawMyShape];
+    [self makeAnimation];
+//    [self drawMyShape];
 }
 
 -(void) makeAnimation
