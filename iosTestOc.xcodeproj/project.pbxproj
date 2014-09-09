@@ -19,6 +19,13 @@
 		EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3719A5CDAA003A115C /* BlurView.m */; };
 		EE54DB3B19A5CDAA003A115C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3919A5CDAA003A115C /* ViewController.m */; };
 		EE8562C019AB05AB00850005 /* FanYeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8562BF19AB05AB00850005 /* FanYeViewController.m */; };
+		EE9240BF19BEA434005F57FA /* guoduViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9240BE19BEA434005F57FA /* guoduViewController.m */; };
+		EE9240C619BECA05005F57FA /* ClcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9240C519BECA05005F57FA /* ClcViewController.m */; };
+		EE9240C919BED20A005F57FA /* PicViewLayOut.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9240C819BED20A005F57FA /* PicViewLayOut.m */; };
+		EE9240CC19BED25C005F57FA /* PicViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9240CB19BED25C005F57FA /* PicViewCell.m */; };
+		EE9240D019BEDE9D005F57FA /* 0.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EE9240CD19BEDE9D005F57FA /* 0.JPG */; };
+		EE9240D119BEDE9D005F57FA /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EE9240CE19BEDE9D005F57FA /* 1.JPG */; };
+		EE9240D219BEDE9D005F57FA /* 2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EE9240CF19BEDE9D005F57FA /* 2.JPG */; };
 		EEA5046619A723C800C0F246 /* FyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5046519A723C800C0F246 /* FyNavigationController.m */; };
 		EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5046819A7241900C0F246 /* ExampleViewController.m */; };
 		EEA5046B19A72BBB00C0F246 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA5046A19A72BBB00C0F246 /* QuartzCore.framework */; };
@@ -74,6 +81,17 @@
 		EE8562BE19AB05AB00850005 /* FanYeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanYeViewController.h; sourceTree = "<group>"; };
 		EE8562BF19AB05AB00850005 /* FanYeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanYeViewController.m; sourceTree = "<group>"; };
 		EE8562C119AB180B00850005 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		EE9240BD19BEA434005F57FA /* guoduViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = guoduViewController.h; sourceTree = "<group>"; };
+		EE9240BE19BEA434005F57FA /* guoduViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = guoduViewController.m; sourceTree = "<group>"; };
+		EE9240C419BECA05005F57FA /* ClcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClcViewController.h; sourceTree = "<group>"; };
+		EE9240C519BECA05005F57FA /* ClcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClcViewController.m; sourceTree = "<group>"; };
+		EE9240C719BED20A005F57FA /* PicViewLayOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewLayOut.h; sourceTree = "<group>"; };
+		EE9240C819BED20A005F57FA /* PicViewLayOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewLayOut.m; sourceTree = "<group>"; };
+		EE9240CA19BED25C005F57FA /* PicViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewCell.h; sourceTree = "<group>"; };
+		EE9240CB19BED25C005F57FA /* PicViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewCell.m; sourceTree = "<group>"; };
+		EE9240CD19BEDE9D005F57FA /* 0.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.JPG; sourceTree = "<group>"; };
+		EE9240CE19BEDE9D005F57FA /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.JPG; sourceTree = "<group>"; };
+		EE9240CF19BEDE9D005F57FA /* 2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.JPG; sourceTree = "<group>"; };
 		EEA5046419A723C800C0F246 /* FyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FyNavigationController.h; sourceTree = "<group>"; };
 		EEA5046519A723C800C0F246 /* FyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FyNavigationController.m; sourceTree = "<group>"; };
 		EEA5046719A7241900C0F246 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
@@ -140,6 +158,19 @@
 			path = maoboli;
 			sourceTree = "<group>";
 		};
+		EE9240C319BEC9DB005F57FA /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EE9240C419BECA05005F57FA /* ClcViewController.h */,
+				EE9240C519BECA05005F57FA /* ClcViewController.m */,
+				EE9240C719BED20A005F57FA /* PicViewLayOut.h */,
+				EE9240C819BED20A005F57FA /* PicViewLayOut.m */,
+				EE9240CA19BED25C005F57FA /* PicViewCell.h */,
+				EE9240CB19BED25C005F57FA /* PicViewCell.m */,
+			);
+			path = collectionView;
+			sourceTree = "<group>";
+		};
 		EEC1DAC319B9CDC1009B1082 /* juhua */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +217,7 @@
 		EECE42C519A4835000E1BCBA /* iosTestOc */ = {
 			isa = PBXGroup;
 			children = (
+				EE9240C319BEC9DB005F57FA /* collectionView */,
 				EEC1DAC319B9CDC1009B1082 /* juhua */,
 				EE54DB3519A5CDAA003A115C /* maoboli */,
 				EECE42CE19A4835000E1BCBA /* AppDelegate.h */,
@@ -216,6 +248,8 @@
 				EE31166419ADE8CB001DB7A8 /* bsierViewController.m */,
 				EE31166619ADEB7C001DB7A8 /* CanView.h */,
 				EE31166719ADEB7C001DB7A8 /* CanView.m */,
+				EE9240BD19BEA434005F57FA /* guoduViewController.h */,
+				EE9240BE19BEA434005F57FA /* guoduViewController.m */,
 			);
 			path = iosTestOc;
 			sourceTree = "<group>";
@@ -252,6 +286,9 @@
 		EECE42F619A4903500E1BCBA /* img */ = {
 			isa = PBXGroup;
 			children = (
+				EE9240CD19BEDE9D005F57FA /* 0.JPG */,
+				EE9240CE19BEDE9D005F57FA /* 1.JPG */,
+				EE9240CF19BEDE9D005F57FA /* 2.JPG */,
 				EE2CCA8219ADCBD2000C1490 /* cloud@2x.png */,
 				EECE42F719A4903500E1BCBA /* bg1.jpg */,
 			);
@@ -335,10 +372,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9240D019BEDE9D005F57FA /* 0.JPG in Resources */,
 				EECE42F819A4903500E1BCBA /* bg1.jpg in Resources */,
+				EE9240D119BEDE9D005F57FA /* 1.JPG in Resources */,
 				EECE42D819A4835000E1BCBA /* Images.xcassets in Resources */,
 				EE54DB3419A5C15B003A115C /* HomeViewController.xib in Resources */,
 				EECE42CA19A4835000E1BCBA /* InfoPlist.strings in Resources */,
+				EE9240D219BEDE9D005F57FA /* 2.JPG in Resources */,
 				EE2CCA8319ADCBD2000C1490 /* cloud@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,12 +400,16 @@
 			files = (
 				EEC1DAC819B9CDC1009B1082 /* juHuaView1.m in Sources */,
 				EE31166819ADEB7C001DB7A8 /* CanView.m in Sources */,
+				EE9240C619BECA05005F57FA /* ClcViewController.m in Sources */,
+				EE9240C919BED20A005F57FA /* PicViewLayOut.m in Sources */,
 				EEC1DAC919B9CDC1009B1082 /* juHuaViewController.m in Sources */,
 				EECE42D019A4835000E1BCBA /* AppDelegate.m in Sources */,
 				EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */,
+				EE9240BF19BEA434005F57FA /* guoduViewController.m in Sources */,
 				EE11D26019AC58BF007B3D5C /* CoinViewController.m in Sources */,
 				EEAEBB7019A74F6500C5EFF5 /* ZhimaViewController.m in Sources */,
 				EE2CCA7F19AD91CA000C1490 /* ParallaxViewController.m in Sources */,
+				EE9240CC19BED25C005F57FA /* PicViewCell.m in Sources */,
 				EE31166519ADE8CB001DB7A8 /* bsierViewController.m in Sources */,
 				EE54DB3319A5C15B003A115C /* HomeViewController.m in Sources */,
 				EE8562C019AB05AB00850005 /* FanYeViewController.m in Sources */,

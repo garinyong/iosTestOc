@@ -16,6 +16,7 @@
 #import "CoinViewController.h"
 #import "ParallaxViewController.h"
 #import "bsierViewController.h"
+#import "ClcViewController.h"
 
 @interface HomeViewController ()
 
@@ -38,7 +39,7 @@
     // Do any additional setup after loading the view from its nib.
     
     dataArr = [NSArray arrayWithObjects:@"mao bo li",@"jerry",@"zhang jia",@"oooye",@"newlity",
-               @"juhua",@"coinhua",@"parallax",@"basier",nil];
+               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" , nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -137,6 +138,12 @@
         case 8:
         {
             bsierViewController *vc = [bsierViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 9:
+        {
+            ClcViewController *vc = [ClcViewController new];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
