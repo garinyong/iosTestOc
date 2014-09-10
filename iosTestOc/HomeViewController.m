@@ -17,6 +17,7 @@
 #import "ParallaxViewController.h"
 #import "bsierViewController.h"
 #import "ClcViewController.h"
+#import "shuguangViewController.h"
 
 @interface HomeViewController ()
 
@@ -39,7 +40,7 @@
     // Do any additional setup after loading the view from its nib.
     
     dataArr = [NSArray arrayWithObjects:@"mao bo li",@"jerry",@"zhang jia",@"oooye",@"newlity",
-               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" , nil];
+               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" ,@"shuguang" ,@"PicRound" ,@"PicRound" , nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -144,6 +145,12 @@
         case 9:
         {
             ClcViewController *vc = [ClcViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 10:
+        {
+            shuguangViewController *vc = [shuguangViewController new];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

@@ -14,6 +14,8 @@
 		EE2CCA8319ADCBD2000C1490 /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE2CCA8219ADCBD2000C1490 /* cloud@2x.png */; };
 		EE31166519ADE8CB001DB7A8 /* bsierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE31166419ADE8CB001DB7A8 /* bsierViewController.m */; };
 		EE31166819ADEB7C001DB7A8 /* CanView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE31166719ADEB7C001DB7A8 /* CanView.m */; };
+		EE48872619BFFCC900AA938F /* shuguangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE48872519BFFCC900AA938F /* shuguangViewController.m */; };
+		EE48872919BFFCF000AA938F /* shuView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE48872819BFFCF000AA938F /* shuView.m */; };
 		EE54DB3319A5C15B003A115C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3119A5C15B003A115C /* HomeViewController.m */; };
 		EE54DB3419A5C15B003A115C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE54DB3219A5C15B003A115C /* HomeViewController.xib */; };
 		EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3719A5CDAA003A115C /* BlurView.m */; };
@@ -71,6 +73,10 @@
 		EE31166419ADE8CB001DB7A8 /* bsierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bsierViewController.m; sourceTree = "<group>"; };
 		EE31166619ADEB7C001DB7A8 /* CanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanView.h; sourceTree = "<group>"; };
 		EE31166719ADEB7C001DB7A8 /* CanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanView.m; sourceTree = "<group>"; };
+		EE48872419BFFCC900AA938F /* shuguangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shuguangViewController.h; sourceTree = "<group>"; };
+		EE48872519BFFCC900AA938F /* shuguangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shuguangViewController.m; sourceTree = "<group>"; };
+		EE48872719BFFCF000AA938F /* shuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shuView.h; sourceTree = "<group>"; };
+		EE48872819BFFCF000AA938F /* shuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shuView.m; sourceTree = "<group>"; };
 		EE54DB3019A5C15B003A115C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		EE54DB3119A5C15B003A115C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		EE54DB3219A5C15B003A115C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -147,6 +153,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE48872319BFFCC900AA938F /* shu */ = {
+			isa = PBXGroup;
+			children = (
+				EE48872419BFFCC900AA938F /* shuguangViewController.h */,
+				EE48872519BFFCC900AA938F /* shuguangViewController.m */,
+				EE48872719BFFCF000AA938F /* shuView.h */,
+				EE48872819BFFCF000AA938F /* shuView.m */,
+			);
+			path = shu;
+			sourceTree = "<group>";
+		};
 		EE54DB3519A5CDAA003A115C /* maoboli */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +234,7 @@
 		EECE42C519A4835000E1BCBA /* iosTestOc */ = {
 			isa = PBXGroup;
 			children = (
+				EE48872319BFFCC900AA938F /* shu */,
 				EE9240C319BEC9DB005F57FA /* collectionView */,
 				EEC1DAC319B9CDC1009B1082 /* juhua */,
 				EE54DB3519A5CDAA003A115C /* maoboli */,
@@ -404,6 +422,7 @@
 				EE9240C919BED20A005F57FA /* PicViewLayOut.m in Sources */,
 				EEC1DAC919B9CDC1009B1082 /* juHuaViewController.m in Sources */,
 				EECE42D019A4835000E1BCBA /* AppDelegate.m in Sources */,
+				EE48872619BFFCC900AA938F /* shuguangViewController.m in Sources */,
 				EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */,
 				EE9240BF19BEA434005F57FA /* guoduViewController.m in Sources */,
 				EE11D26019AC58BF007B3D5C /* CoinViewController.m in Sources */,
@@ -415,6 +434,7 @@
 				EE8562C019AB05AB00850005 /* FanYeViewController.m in Sources */,
 				EE1E40CC19A5EC3100F8C1FB /* AnimationViewController.m in Sources */,
 				EEA5046619A723C800C0F246 /* FyNavigationController.m in Sources */,
+				EE48872919BFFCF000AA938F /* shuView.m in Sources */,
 				EE11D26319AC5945007B3D5C /* CoinView.m in Sources */,
 				EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */,
 				EECE42CC19A4835000E1BCBA /* main.m in Sources */,

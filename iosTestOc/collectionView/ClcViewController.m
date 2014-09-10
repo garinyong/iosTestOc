@@ -77,6 +77,33 @@
     return cell;
 }
 
+-(void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+//    int curOffSet = scrollView.contentOffset.x;
+//    
+//    int page = curOffSet/320;
+//    int juli = curOffSet%320;
+//    if (page>=2&&juli>30)
+//    {
+//        [scrollView setContentOffset:CGPointMake(0, scrollView.contentOffset.y) animated:NO];
+//    }
+    
+//    float targetX = scrollView.contentOffset.x;
+//    int numCount = [contentView numberOfItemsInSection:0];
+//    float ITEM_WIDTH = scrollView.frame.size.width;
+//    
+//    if (numCount>=3)
+//    {
+//        if (targetX < ITEM_WIDTH/2) {
+//            [scrollView setContentOffset:CGPointMake(targetX+ITEM_WIDTH *numCount, scrollView.contentOffset.y)];
+//        }
+//        else if (targetX >ITEM_WIDTH/2+ITEM_WIDTH *numCount)
+//        {
+//            [scrollView setContentOffset:CGPointMake(targetX-ITEM_WIDTH *numCount, scrollView.contentOffset.y)];
+//        }
+//    }
+}
+
 /*
 #pragma mark - Navigation
 
