@@ -18,6 +18,7 @@
 #import "bsierViewController.h"
 #import "ClcViewController.h"
 #import "shuguangViewController.h"
+#import "niceViewController.h"
 
 @interface HomeViewController ()
 
@@ -40,7 +41,7 @@
     // Do any additional setup after loading the view from its nib.
     
     dataArr = [NSArray arrayWithObjects:@"mao bo li",@"jerry",@"zhang jia",@"oooye",@"newlity",
-               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" ,@"shuguang" ,@"PicRound" ,@"PicRound" , nil];
+               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" ,@"shuguang" ,@"niceViewC" ,@"PicRound" , nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -151,6 +152,12 @@
         case 10:
         {
             shuguangViewController *vc = [shuguangViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 11:
+        {
+            niceViewController *vc = [niceViewController new];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

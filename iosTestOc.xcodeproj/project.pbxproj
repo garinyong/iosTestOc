@@ -16,6 +16,8 @@
 		EE31166819ADEB7C001DB7A8 /* CanView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE31166719ADEB7C001DB7A8 /* CanView.m */; };
 		EE48872619BFFCC900AA938F /* shuguangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE48872519BFFCC900AA938F /* shuguangViewController.m */; };
 		EE48872919BFFCF000AA938F /* shuView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE48872819BFFCF000AA938F /* shuView.m */; };
+		EE48872D19C04DD700AA938F /* niceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE48872C19C04DD700AA938F /* niceViewController.m */; };
+		EE48872F19C0608E00AA938F /* 1213.png in Resources */ = {isa = PBXBuildFile; fileRef = EE48872E19C0608E00AA938F /* 1213.png */; };
 		EE54DB3319A5C15B003A115C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3119A5C15B003A115C /* HomeViewController.m */; };
 		EE54DB3419A5C15B003A115C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE54DB3219A5C15B003A115C /* HomeViewController.xib */; };
 		EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3719A5CDAA003A115C /* BlurView.m */; };
@@ -77,6 +79,9 @@
 		EE48872519BFFCC900AA938F /* shuguangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shuguangViewController.m; sourceTree = "<group>"; };
 		EE48872719BFFCF000AA938F /* shuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shuView.h; sourceTree = "<group>"; };
 		EE48872819BFFCF000AA938F /* shuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shuView.m; sourceTree = "<group>"; };
+		EE48872B19C04DD700AA938F /* niceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niceViewController.h; sourceTree = "<group>"; };
+		EE48872C19C04DD700AA938F /* niceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niceViewController.m; sourceTree = "<group>"; };
+		EE48872E19C0608E00AA938F /* 1213.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1213.png; sourceTree = "<group>"; };
 		EE54DB3019A5C15B003A115C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		EE54DB3119A5C15B003A115C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		EE54DB3219A5C15B003A115C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -164,6 +169,15 @@
 			path = shu;
 			sourceTree = "<group>";
 		};
+		EE48872A19C04D9200AA938F /* expediaTest */ = {
+			isa = PBXGroup;
+			children = (
+				EE48872B19C04DD700AA938F /* niceViewController.h */,
+				EE48872C19C04DD700AA938F /* niceViewController.m */,
+			);
+			path = expediaTest;
+			sourceTree = "<group>";
+		};
 		EE54DB3519A5CDAA003A115C /* maoboli */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +248,7 @@
 		EECE42C519A4835000E1BCBA /* iosTestOc */ = {
 			isa = PBXGroup;
 			children = (
+				EE48872A19C04D9200AA938F /* expediaTest */,
 				EE48872319BFFCC900AA938F /* shu */,
 				EE9240C319BEC9DB005F57FA /* collectionView */,
 				EEC1DAC319B9CDC1009B1082 /* juhua */,
@@ -304,6 +319,7 @@
 		EECE42F619A4903500E1BCBA /* img */ = {
 			isa = PBXGroup;
 			children = (
+				EE48872E19C0608E00AA938F /* 1213.png */,
 				EE9240CD19BEDE9D005F57FA /* 0.JPG */,
 				EE9240CE19BEDE9D005F57FA /* 1.JPG */,
 				EE9240CF19BEDE9D005F57FA /* 2.JPG */,
@@ -390,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE48872F19C0608E00AA938F /* 1213.png in Resources */,
 				EE9240D019BEDE9D005F57FA /* 0.JPG in Resources */,
 				EECE42F819A4903500E1BCBA /* bg1.jpg in Resources */,
 				EE9240D119BEDE9D005F57FA /* 1.JPG in Resources */,
@@ -421,6 +438,7 @@
 				EE9240C619BECA05005F57FA /* ClcViewController.m in Sources */,
 				EE9240C919BED20A005F57FA /* PicViewLayOut.m in Sources */,
 				EEC1DAC919B9CDC1009B1082 /* juHuaViewController.m in Sources */,
+				EE48872D19C04DD700AA938F /* niceViewController.m in Sources */,
 				EECE42D019A4835000E1BCBA /* AppDelegate.m in Sources */,
 				EE48872619BFFCC900AA938F /* shuguangViewController.m in Sources */,
 				EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */,
