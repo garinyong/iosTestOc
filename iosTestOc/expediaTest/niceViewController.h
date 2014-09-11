@@ -11,7 +11,15 @@
 @interface niceViewController : UIViewController<UIScrollViewDelegate>
 {
     UIImageView *showImgView;
-    UIView *downView;
+    UIView *detailView;
     float maxJuli;
+    float imgViewHeight;
+    float overScreenHeight;
+    UIScrollView *contentView;
+    
+    float maxContentOffset;
+    BOOL isDown;
+    
+    float begingContentOffset;
 }
 @end

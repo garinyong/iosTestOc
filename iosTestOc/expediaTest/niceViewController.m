@@ -17,8 +17,12 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
+        maxJuli = 50;
+        imgViewHeight = 200;
+        overScreenHeight = 300;
     }
     return self;
 }
@@ -26,30 +30,51 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor grayColor];
     
-    maxJuli = 30;
-    
-    showImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
-    
-    showImgView.center = CGPointMake(showImgView.center.x, (66 + 200)/2);
-    
-    showImgView.image = [UIImage imageNamed:@"0.jpg"];
-    showImgView.backgroundColor = [UIColor redColor];
-//    showImgView.clipsToBounds = YES;
+    //图片框
+    showImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, imgViewHeight)];
+    showImgView.center = CGPointMake(showImgView.center.x, (66 + imgViewHeight)/2);
+    showImgView.image = [UIImage imageNamed:@"1213.png"];
+    showImgView.backgroundColor = [UIColor clearColor];
     showImgView.contentMode = UIViewContentModeCenter;
     [self.view addSubview:showImgView];
     
-    UIScrollView *contentView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    contentView.contentSize = CGSizeMake(320, self.view.bounds.size.height + 300);
+    contentView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    contentView.contentSize = CGSizeMake(320, self.view.bounds.size.height + overScreenHeight);
     contentView.delegate = self;
+    contentView.scrollsToTop = NO;
     [self.view addSubview:contentView];
     
-    //downView
-    downView = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 320, self.view.bounds.size.height - 200 + 300)];
-    downView.backgroundColor = [UIColor greenColor];
-    [contentView addSubview:downView];
+    detailView = [[UIView alloc] initWithFrame:CGRectMake(0, imgViewHeight, 320, self.view.bounds.size.height - imgViewHeight + overScreenHeight)];
+    detailView.backgroundColor = [UIColor greenColor];
+    [contentView addSubview:detailView];
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    [singleTap setNumberOfTapsRequired:1];
+    [singleTap setNumberOfTouchesRequired:1];
+    [contentView addGestureRecognizer:singleTap];
+}
+
+
+#pragma mark UIGestureRecognizerDelegate
+//点击
+- (void)handleTap:(UIPanGestureRecognizer *)recognizer
+{
+    NSLog(@"tap");
+    
+    return;
+    
+    if (isDown)
+    {
+        [self exeXiaHua:NO];
+    }
+    else
+    {
+        [self exeXiaHua:YES];
+    }
+    
+    isDown = !isDown;
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,27 +87,54 @@
 {
     float curContentOffset = scrollView.contentOffset.y;
     
-    if (curContentOffset>0) {
+    NSLog(@"curContentOffset:%f",curContentOffset);
+    
+    showImgView.center = CGPointMake(showImgView.center.x, (66 + imgViewHeight - curContentOffset)/2);
+}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
+{
+    float endDraggingContentOffset = scrollView.contentOffset.y;
+    
+    NSLog(@"endDraggingContentOffset:%f",endDraggingContentOffset);
+    
+    if (endDraggingContentOffset>= 0) {
         return;
     }
     
-    NSLog(@"curContentOffset:%f",curContentOffset);
-    
-    showImgView.center = CGPointMake(showImgView.center.x, (66 + 200 - curContentOffset)/2);
-
-    
-    if (curContentOffset>maxJuli) {
-        //下滑
+    //向下
+    if (endDraggingContentOffset<begingContentOffset)
+    {
+        if (abs(endDraggingContentOffset - begingContentOffset)>maxJuli)
+        {
+            [self exeXiaHua:YES];
+        }
     }
     else
     {
-//        showImgView.frame =
+        if (abs(endDraggingContentOffset - begingContentOffset)>maxJuli)
+        {
+            [self exeXiaHua:NO];
+        }
     }
 }
 
--(void) exeXiaHua
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-    
+    begingContentOffset = scrollView.contentOffset.y;
+}
+
+-(void) exeXiaHua:(BOOL) isXiaHua
+{
+    float xiaJuli = self.view.bounds.size.height - imgViewHeight;
+    if (isXiaHua)
+    {
+        [contentView setContentOffset:CGPointMake(0, - xiaJuli) animated:YES];
+    }
+    else
+    {
+        [contentView setContentOffset:CGPointZero animated:YES];
+    }
 }
 
 /*
