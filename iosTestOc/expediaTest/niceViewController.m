@@ -50,10 +50,18 @@
     detailView.backgroundColor = [UIColor greenColor];
     [contentView addSubview:detailView];
     
+    smallWindowView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, 320, 200)];
+    smallWindowView.clipsToBounds = YES;
+    [detailView addSubview:smallWindowView];
+    
+    testViewController = [TestMapViewController new];
+    testViewController.view.center = smallWindowView.center;
+    [smallWindowView addSubview:testViewController.view];
+    
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     [singleTap setNumberOfTapsRequired:1];
     [singleTap setNumberOfTouchesRequired:1];
-    [contentView addGestureRecognizer:singleTap];
+    [smallWindowView addGestureRecognizer:singleTap];
 }
 
 
@@ -61,20 +69,7 @@
 //点击
 - (void)handleTap:(UIPanGestureRecognizer *)recognizer
 {
-    NSLog(@"tap");
-    
-    return;
-    
-    if (isDown)
-    {
-        [self exeXiaHua:NO];
-    }
-    else
-    {
-        [self exeXiaHua:YES];
-    }
-    
-    isDown = !isDown;
+    smallWindowView.clipsToBounds = !smallWindowView.clipsToBounds;
 }
 
 - (void)didReceiveMemoryWarning
@@ -86,6 +81,20 @@
 -(void) scrollViewDidScroll:(UIScrollView *)scrollView
 {
     float curContentOffset = scrollView.contentOffset.y;
+    
+    if (YES)
+    {
+        if (curContentOffset<0)
+        {
+            testViewController.view.center = CGPointMake(smallWindowView.center.x,smallWindowView.center.y-abs(curContentOffset)*0.3);
+        }
+        else
+        {
+            testViewController.view.center = CGPointMake(smallWindowView.center.x,smallWindowView.center.y+abs(curContentOffset)*0.3);
+        }
+    }
+    
+    
     
     NSLog(@"curContentOffset:%f",curContentOffset);
     

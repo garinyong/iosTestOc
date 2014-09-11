@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestMapViewController.h"
 
 @interface niceViewController : UIViewController<UIScrollViewDelegate>
 {
@@ -17,9 +18,10 @@
     float overScreenHeight;
     UIScrollView *contentView;
     
-    float maxContentOffset;
-    BOOL isDown;
-    
     float begingContentOffset;
+    
+    UIView *smallWindowView;
+    
+    TestMapViewController *testViewController;
 }
 @end

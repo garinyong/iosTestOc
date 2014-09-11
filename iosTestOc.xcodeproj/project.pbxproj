@@ -12,6 +12,8 @@
 		EE1E40CC19A5EC3100F8C1FB /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1E40CB19A5EC3100F8C1FB /* AnimationViewController.m */; };
 		EE2CCA7F19AD91CA000C1490 /* ParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CCA7E19AD91CA000C1490 /* ParallaxViewController.m */; };
 		EE2CCA8319ADCBD2000C1490 /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE2CCA8219ADCBD2000C1490 /* cloud@2x.png */; };
+		EE2DF87819C1A5BB00CD5ECA /* TestMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2DF87719C1A5BB00CD5ECA /* TestMapViewController.m */; };
+		EE2DF87A19C1A60600CD5ECA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2DF87919C1A60600CD5ECA /* MapKit.framework */; };
 		EE31166519ADE8CB001DB7A8 /* bsierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE31166419ADE8CB001DB7A8 /* bsierViewController.m */; };
 		EE31166819ADEB7C001DB7A8 /* CanView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE31166719ADEB7C001DB7A8 /* CanView.m */; };
 		EE48872619BFFCC900AA938F /* shuguangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE48872519BFFCC900AA938F /* shuguangViewController.m */; };
@@ -71,6 +73,9 @@
 		EE2CCA7D19AD91CA000C1490 /* ParallaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxViewController.h; sourceTree = "<group>"; };
 		EE2CCA7E19AD91CA000C1490 /* ParallaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxViewController.m; sourceTree = "<group>"; };
 		EE2CCA8219ADCBD2000C1490 /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
+		EE2DF87619C1A5BB00CD5ECA /* TestMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMapViewController.h; sourceTree = "<group>"; };
+		EE2DF87719C1A5BB00CD5ECA /* TestMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMapViewController.m; sourceTree = "<group>"; };
+		EE2DF87919C1A60600CD5ECA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EE31166319ADE8CB001DB7A8 /* bsierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsierViewController.h; sourceTree = "<group>"; };
 		EE31166419ADE8CB001DB7A8 /* bsierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bsierViewController.m; sourceTree = "<group>"; };
 		EE31166619ADEB7C001DB7A8 /* CanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanView.h; sourceTree = "<group>"; };
@@ -138,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2DF87A19C1A60600CD5ECA /* MapKit.framework in Frameworks */,
 				EEA5046B19A72BBB00C0F246 /* QuartzCore.framework in Frameworks */,
 				EECE42C219A4835000E1BCBA /* CoreGraphics.framework in Frameworks */,
 				EECE42C419A4835000E1BCBA /* UIKit.framework in Frameworks */,
@@ -174,6 +180,8 @@
 			children = (
 				EE48872B19C04DD700AA938F /* niceViewController.h */,
 				EE48872C19C04DD700AA938F /* niceViewController.m */,
+				EE2DF87619C1A5BB00CD5ECA /* TestMapViewController.h */,
+				EE2DF87719C1A5BB00CD5ECA /* TestMapViewController.m */,
 			);
 			path = expediaTest;
 			sourceTree = "<group>";
@@ -236,6 +244,7 @@
 		EECE42BE19A4835000E1BCBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE2DF87919C1A60600CD5ECA /* MapKit.framework */,
 				EEA5046A19A72BBB00C0F246 /* QuartzCore.framework */,
 				EECE42BF19A4835000E1BCBA /* Foundation.framework */,
 				EECE42C119A4835000E1BCBA /* CoreGraphics.framework */,
@@ -456,6 +465,7 @@
 				EE11D26319AC5945007B3D5C /* CoinView.m in Sources */,
 				EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */,
 				EECE42CC19A4835000E1BCBA /* main.m in Sources */,
+				EE2DF87819C1A5BB00CD5ECA /* TestMapViewController.m in Sources */,
 				EE54DB3B19A5CDAA003A115C /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
