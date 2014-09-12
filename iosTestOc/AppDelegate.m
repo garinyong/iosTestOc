@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
+#import "MainViewController.h"
 #import "FyNavigationController.h"
 
 @implementation AppDelegate
@@ -18,7 +18,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    FyNavigationController *nav = [[FyNavigationController alloc] initWithRootViewController:[HomeViewController new]];
+    FyNavigationController *nav = [[FyNavigationController alloc] initWithRootViewController:[MainViewController new]];
     
     self.window.rootViewController = nav;
     

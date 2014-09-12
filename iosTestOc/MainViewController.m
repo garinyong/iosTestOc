@@ -1,12 +1,12 @@
 //
-//  HomeViewController.m
+//  MainViewController.m
 //  iosTestOc
 //
-//  Created by gaoyong on 14-8-21.
+//  Created by gaoyong on 14-9-12.
 //  Copyright (c) 2014年 gaoyong. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "MainViewController.h"
 #import "ViewController.h"
 #import "AnimationViewController.h"
 #import "ExampleViewController.h"
@@ -19,12 +19,13 @@
 #import "ClcViewController.h"
 #import "shuguangViewController.h"
 #import "niceViewController.h"
+#import "TTViewController.h"
 
-@interface HomeViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation MainViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,10 +39,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    
+    // Do any additional setup after loading the view.
     dataArr = [NSArray arrayWithObjects:@"mao bo li",@"jerry",@"zhang jia",@"oooye",@"newlity",
-               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" ,@"shuguang" ,@"niceViewC" ,@"PicRound" , nil];
+               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" ,@"shuguang" ,@"niceViewC" ,@"TTViewController" , nil];
+    
+    contentView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.bounds.size.height) style:UITableViewStylePlain];
+    contentView.delegate = self;
+    contentView.dataSource = self;
+    [self.view addSubview:contentView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -158,6 +163,12 @@
         case 11:
         {
             niceViewController *vc = [niceViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 12:
+        {
+            TTViewController *vc = [TTViewController new];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

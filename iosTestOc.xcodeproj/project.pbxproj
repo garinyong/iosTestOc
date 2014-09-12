@@ -20,10 +20,10 @@
 		EE48872919BFFCF000AA938F /* shuView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE48872819BFFCF000AA938F /* shuView.m */; };
 		EE48872D19C04DD700AA938F /* niceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE48872C19C04DD700AA938F /* niceViewController.m */; };
 		EE48872F19C0608E00AA938F /* 1213.png in Resources */ = {isa = PBXBuildFile; fileRef = EE48872E19C0608E00AA938F /* 1213.png */; };
-		EE54DB3319A5C15B003A115C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3119A5C15B003A115C /* HomeViewController.m */; };
-		EE54DB3419A5C15B003A115C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE54DB3219A5C15B003A115C /* HomeViewController.xib */; };
 		EE54DB3A19A5CDAA003A115C /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3719A5CDAA003A115C /* BlurView.m */; };
 		EE54DB3B19A5CDAA003A115C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE54DB3919A5CDAA003A115C /* ViewController.m */; };
+		EE81B9DE19C29C680057CB07 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE81B9DD19C29C680057CB07 /* TTViewController.m */; };
+		EE81BA5419C2DD2B0057CB07 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE81BA5319C2DD2B0057CB07 /* MainViewController.m */; };
 		EE8562C019AB05AB00850005 /* FanYeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8562BF19AB05AB00850005 /* FanYeViewController.m */; };
 		EE9240BF19BEA434005F57FA /* guoduViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9240BE19BEA434005F57FA /* guoduViewController.m */; };
 		EE9240C619BECA05005F57FA /* ClcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9240C519BECA05005F57FA /* ClcViewController.m */; };
@@ -87,13 +87,14 @@
 		EE48872B19C04DD700AA938F /* niceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niceViewController.h; sourceTree = "<group>"; };
 		EE48872C19C04DD700AA938F /* niceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niceViewController.m; sourceTree = "<group>"; };
 		EE48872E19C0608E00AA938F /* 1213.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1213.png; sourceTree = "<group>"; };
-		EE54DB3019A5C15B003A115C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		EE54DB3119A5C15B003A115C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		EE54DB3219A5C15B003A115C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EE54DB3619A5CDAA003A115C /* BlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurView.h; sourceTree = "<group>"; };
 		EE54DB3719A5CDAA003A115C /* BlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurView.m; sourceTree = "<group>"; };
 		EE54DB3819A5CDAA003A115C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EE54DB3919A5CDAA003A115C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE81B9DC19C29C680057CB07 /* TTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
+		EE81B9DD19C29C680057CB07 /* TTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
+		EE81BA5219C2DD2B0057CB07 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EE81BA5319C2DD2B0057CB07 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		EE8562BE19AB05AB00850005 /* FanYeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanYeViewController.h; sourceTree = "<group>"; };
 		EE8562BF19AB05AB00850005 /* FanYeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanYeViewController.m; sourceTree = "<group>"; };
 		EE8562C119AB180B00850005 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
@@ -257,6 +258,8 @@
 		EECE42C519A4835000E1BCBA /* iosTestOc */ = {
 			isa = PBXGroup;
 			children = (
+				EE81BA5219C2DD2B0057CB07 /* MainViewController.h */,
+				EE81BA5319C2DD2B0057CB07 /* MainViewController.m */,
 				EE48872A19C04D9200AA938F /* expediaTest */,
 				EE48872319BFFCC900AA938F /* shu */,
 				EE9240C319BEC9DB005F57FA /* collectionView */,
@@ -266,9 +269,6 @@
 				EECE42CF19A4835000E1BCBA /* AppDelegate.m */,
 				EECE42D719A4835000E1BCBA /* Images.xcassets */,
 				EECE42C619A4835000E1BCBA /* Supporting Files */,
-				EE54DB3019A5C15B003A115C /* HomeViewController.h */,
-				EE54DB3119A5C15B003A115C /* HomeViewController.m */,
-				EE54DB3219A5C15B003A115C /* HomeViewController.xib */,
 				EE1E40CA19A5EC3100F8C1FB /* AnimationViewController.h */,
 				EE1E40CB19A5EC3100F8C1FB /* AnimationViewController.m */,
 				EEA5046419A723C800C0F246 /* FyNavigationController.h */,
@@ -292,6 +292,8 @@
 				EE31166719ADEB7C001DB7A8 /* CanView.m */,
 				EE9240BD19BEA434005F57FA /* guoduViewController.h */,
 				EE9240BE19BEA434005F57FA /* guoduViewController.m */,
+				EE81B9DC19C29C680057CB07 /* TTViewController.h */,
+				EE81B9DD19C29C680057CB07 /* TTViewController.m */,
 			);
 			path = iosTestOc;
 			sourceTree = "<group>";
@@ -420,7 +422,6 @@
 				EECE42F819A4903500E1BCBA /* bg1.jpg in Resources */,
 				EE9240D119BEDE9D005F57FA /* 1.JPG in Resources */,
 				EECE42D819A4835000E1BCBA /* Images.xcassets in Resources */,
-				EE54DB3419A5C15B003A115C /* HomeViewController.xib in Resources */,
 				EECE42CA19A4835000E1BCBA /* InfoPlist.strings in Resources */,
 				EE9240D219BEDE9D005F57FA /* 2.JPG in Resources */,
 				EE2CCA8319ADCBD2000C1490 /* cloud@2x.png in Resources */,
@@ -457,15 +458,16 @@
 				EE2CCA7F19AD91CA000C1490 /* ParallaxViewController.m in Sources */,
 				EE9240CC19BED25C005F57FA /* PicViewCell.m in Sources */,
 				EE31166519ADE8CB001DB7A8 /* bsierViewController.m in Sources */,
-				EE54DB3319A5C15B003A115C /* HomeViewController.m in Sources */,
 				EE8562C019AB05AB00850005 /* FanYeViewController.m in Sources */,
 				EE1E40CC19A5EC3100F8C1FB /* AnimationViewController.m in Sources */,
+				EE81BA5419C2DD2B0057CB07 /* MainViewController.m in Sources */,
 				EEA5046619A723C800C0F246 /* FyNavigationController.m in Sources */,
 				EE48872919BFFCF000AA938F /* shuView.m in Sources */,
 				EE11D26319AC5945007B3D5C /* CoinView.m in Sources */,
 				EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */,
 				EECE42CC19A4835000E1BCBA /* main.m in Sources */,
 				EE2DF87819C1A5BB00CD5ECA /* TestMapViewController.m in Sources */,
+				EE81B9DE19C29C680057CB07 /* TTViewController.m in Sources */,
 				EE54DB3B19A5CDAA003A115C /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
