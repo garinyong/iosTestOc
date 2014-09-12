@@ -36,6 +36,8 @@
 		EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5046819A7241900C0F246 /* ExampleViewController.m */; };
 		EEA5046B19A72BBB00C0F246 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA5046A19A72BBB00C0F246 /* QuartzCore.framework */; };
 		EEAEBB7019A74F6500C5EFF5 /* ZhimaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAEBB6F19A74F6500C5EFF5 /* ZhimaViewController.m */; };
+		EEBD942519C3141D00689DBE /* 1213.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EEBD942419C3141D00689DBE /* 1213.JPG */; };
+		EEBD942C19C3171700689DBE /* netEasyYunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBD942B19C3171700689DBE /* netEasyYunViewController.m */; };
 		EEC1DAC819B9CDC1009B1082 /* juHuaView1.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC1DAC519B9CDC1009B1082 /* juHuaView1.m */; };
 		EEC1DAC919B9CDC1009B1082 /* juHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC1DAC719B9CDC1009B1082 /* juHuaViewController.m */; };
 		EECE42C019A4835000E1BCBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECE42BF19A4835000E1BCBA /* Foundation.framework */; };
@@ -116,6 +118,9 @@
 		EEA5046A19A72BBB00C0F246 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EEAEBB6E19A74F6500C5EFF5 /* ZhimaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhimaViewController.h; sourceTree = "<group>"; };
 		EEAEBB6F19A74F6500C5EFF5 /* ZhimaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhimaViewController.m; sourceTree = "<group>"; };
+		EEBD942419C3141D00689DBE /* 1213.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1213.JPG; sourceTree = "<group>"; };
+		EEBD942A19C3171700689DBE /* netEasyYunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netEasyYunViewController.h; sourceTree = "<group>"; };
+		EEBD942B19C3171700689DBE /* netEasyYunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netEasyYunViewController.m; sourceTree = "<group>"; };
 		EEC1DAC419B9CDC1009B1082 /* juHuaView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juHuaView1.h; sourceTree = "<group>"; };
 		EEC1DAC519B9CDC1009B1082 /* juHuaView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = juHuaView1.m; sourceTree = "<group>"; };
 		EEC1DAC619B9CDC1009B1082 /* juHuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juHuaViewController.h; sourceTree = "<group>"; };
@@ -211,6 +216,15 @@
 			path = collectionView;
 			sourceTree = "<group>";
 		};
+		EEBD942919C3171700689DBE /* netEasyYun */ = {
+			isa = PBXGroup;
+			children = (
+				EEBD942A19C3171700689DBE /* netEasyYunViewController.h */,
+				EEBD942B19C3171700689DBE /* netEasyYunViewController.m */,
+			);
+			path = netEasyYun;
+			sourceTree = "<group>";
+		};
 		EEC1DAC319B9CDC1009B1082 /* juhua */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +272,7 @@
 		EECE42C519A4835000E1BCBA /* iosTestOc */ = {
 			isa = PBXGroup;
 			children = (
+				EEBD942919C3171700689DBE /* netEasyYun */,
 				EE81BA5219C2DD2B0057CB07 /* MainViewController.h */,
 				EE81BA5319C2DD2B0057CB07 /* MainViewController.m */,
 				EE48872A19C04D9200AA938F /* expediaTest */,
@@ -330,6 +345,7 @@
 		EECE42F619A4903500E1BCBA /* img */ = {
 			isa = PBXGroup;
 			children = (
+				EEBD942419C3141D00689DBE /* 1213.JPG */,
 				EE48872E19C0608E00AA938F /* 1213.png */,
 				EE9240CD19BEDE9D005F57FA /* 0.JPG */,
 				EE9240CE19BEDE9D005F57FA /* 1.JPG */,
@@ -418,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE48872F19C0608E00AA938F /* 1213.png in Resources */,
+				EEBD942519C3141D00689DBE /* 1213.JPG in Resources */,
 				EE9240D019BEDE9D005F57FA /* 0.JPG in Resources */,
 				EECE42F819A4903500E1BCBA /* bg1.jpg in Resources */,
 				EE9240D119BEDE9D005F57FA /* 1.JPG in Resources */,
@@ -467,6 +484,7 @@
 				EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */,
 				EECE42CC19A4835000E1BCBA /* main.m in Sources */,
 				EE2DF87819C1A5BB00CD5ECA /* TestMapViewController.m in Sources */,
+				EEBD942C19C3171700689DBE /* netEasyYunViewController.m in Sources */,
 				EE81B9DE19C29C680057CB07 /* TTViewController.m in Sources */,
 				EE54DB3B19A5CDAA003A115C /* ViewController.m in Sources */,
 			);

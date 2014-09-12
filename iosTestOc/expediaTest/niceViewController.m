@@ -35,7 +35,7 @@
     //图片框
     showImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, imgViewHeight)];
     showImgView.center = CGPointMake(showImgView.center.x, (66 + imgViewHeight)/2);
-    showImgView.image = [UIImage imageNamed:@"1213.png"];
+    showImgView.image = [UIImage imageNamed:@"1213.JPG"];
     showImgView.backgroundColor = [UIColor clearColor];
     showImgView.contentMode = UIViewContentModeCenter;
     [self.view addSubview:showImgView];
