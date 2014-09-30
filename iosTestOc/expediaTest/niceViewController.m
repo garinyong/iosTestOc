@@ -35,7 +35,7 @@
     //图片框
     showImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, imgViewHeight)];
     showImgView.center = CGPointMake(showImgView.center.x, (66 + imgViewHeight)/2);
-    showImgView.image = [UIImage imageNamed:@"1213.JPG"];
+    showImgView.image = [UIImage imageNamed:@"123.jpg"];
     showImgView.backgroundColor = [UIColor clearColor];
     showImgView.contentMode = UIViewContentModeCenter;
     [self.view addSubview:showImgView];
@@ -47,7 +47,7 @@
     [self.view addSubview:contentView];
     
     detailView = [[UIView alloc] initWithFrame:CGRectMake(0, imgViewHeight, 320, self.view.bounds.size.height - imgViewHeight + overScreenHeight)];
-    detailView.backgroundColor = [UIColor greenColor];
+    detailView.backgroundColor = [UIColor colorWithRed:89/255.0 green:136/255.0 blue:120/255.0 alpha:1];
     [contentView addSubview:detailView];
     
     smallWindowView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, 320, 200)];

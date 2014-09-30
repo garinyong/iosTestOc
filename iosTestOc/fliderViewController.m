@@ -34,7 +34,7 @@
     
     float height = p.y + 64;
     
-    [self doImmmmm:height];
+    [self splitViewPushView:height];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,7 +79,7 @@
     
 }
 
--(void) doImmmmm:(float) height
+-(void) splitViewPushView:(float) height
 {
     CGRect rect1 = CGRectMake(0, 0, self.view.bounds.size.width, height);
     

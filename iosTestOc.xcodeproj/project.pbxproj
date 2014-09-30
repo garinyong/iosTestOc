@@ -55,6 +55,7 @@
 		EECE42EB19A4835000E1BCBA /* iosTestOcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EECE42EA19A4835000E1BCBA /* iosTestOcTests.m */; };
 		EECE42F819A4903500E1BCBA /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EECE42F719A4903500E1BCBA /* bg1.jpg */; };
 		EEFC4F2019DA505D000C24B0 /* fliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFC4F1F19DA505D000C24B0 /* fliderViewController.m */; };
+		EEFC4F2619DAA25C000C24B0 /* 123@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EEFC4F2519DAA25C000C24B0 /* 123@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,7 @@
 		EECE42F719A4903500E1BCBA /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
 		EEFC4F1E19DA505D000C24B0 /* fliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fliderViewController.h; sourceTree = "<group>"; };
 		EEFC4F1F19DA505D000C24B0 /* fliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fliderViewController.m; sourceTree = "<group>"; };
+		EEFC4F2519DAA25C000C24B0 /* 123@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "123@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +357,7 @@
 		EECE42F619A4903500E1BCBA /* img */ = {
 			isa = PBXGroup;
 			children = (
+				EEFC4F2519DAA25C000C24B0 /* 123@2x.jpg */,
 				EEBD942419C3141D00689DBE /* 1213.JPG */,
 				EE48872E19C0608E00AA938F /* 1213.png */,
 				EE9240CD19BEDE9D005F57FA /* 0.JPG */,
@@ -448,6 +451,7 @@
 				EE9240D019BEDE9D005F57FA /* 0.JPG in Resources */,
 				EECE42F819A4903500E1BCBA /* bg1.jpg in Resources */,
 				EE9240D119BEDE9D005F57FA /* 1.JPG in Resources */,
+				EEFC4F2619DAA25C000C24B0 /* 123@2x.jpg in Resources */,
 				EECE42D819A4835000E1BCBA /* Images.xcassets in Resources */,
 				EECE42CA19A4835000E1BCBA /* InfoPlist.strings in Resources */,
 				EE9240D219BEDE9D005F57FA /* 2.JPG in Resources */,
