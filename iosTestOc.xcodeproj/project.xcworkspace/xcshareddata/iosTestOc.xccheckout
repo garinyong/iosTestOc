@@ -10,33 +10,33 @@
 	<string>iosTestOc</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9A42FCDE-270C-4CF8-AEEC-232980824177</key>
+		<key>59A69A019942A1E50B877057899D4817E7F5E3F3</key>
 		<string>https://github.com/garinyong/iosTestOc.git</string>
-		<key>D24CB204-B772-43F3-90A1-19E20A0D1F6E</key>
+		<key>6A87DBD970157DD90283143097678669D3B0C082</key>
 		<string>https://github.com/garinyong/iosTestOc.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iosTestOc.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9A42FCDE-270C-4CF8-AEEC-232980824177</key>
+		<key>59A69A019942A1E50B877057899D4817E7F5E3F3</key>
 		<string>../../iosTestOc</string>
-		<key>D24CB204-B772-43F3-90A1-19E20A0D1F6E</key>
+		<key>6A87DBD970157DD90283143097678669D3B0C082</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/garinyong/iosTestOc.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D24CB204-B772-43F3-90A1-19E20A0D1F6E</string>
+	<string>6A87DBD970157DD90283143097678669D3B0C082</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D24CB204-B772-43F3-90A1-19E20A0D1F6E</string>
+			<string>6A87DBD970157DD90283143097678669D3B0C082</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iosTestOc</string>
 		</dict>
@@ -44,7 +44,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9A42FCDE-270C-4CF8-AEEC-232980824177</string>
+			<string>59A69A019942A1E50B877057899D4817E7F5E3F3</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iosTestOc</string>
 		</dict>

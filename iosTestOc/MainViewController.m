@@ -20,6 +20,8 @@
 #import "shuguangViewController.h"
 #import "niceViewController.h"
 #import "TTViewController.h"
+#import "netEasyYunViewController.h"
+#import "fliderViewController.h"
 
 @interface MainViewController ()
 
@@ -41,7 +43,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     dataArr = [NSArray arrayWithObjects:@"mao bo li",@"jerry",@"zhang jia",@"oooye",@"newlity",
-               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" ,@"shuguang" ,@"niceViewC" ,@"TTViewController" , nil];
+               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" ,@"shuguang" ,@"niceViewC" ,@"TTViewController" , @"yun", @"flider", nil];
     
     contentView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.bounds.size.height) style:UITableViewStylePlain];
     contentView.delegate = self;
@@ -169,6 +171,18 @@
         case 12:
         {
             TTViewController *vc = [TTViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 13:
+        {
+            netEasyYunViewController *vc = [netEasyYunViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 14:
+        {
+            fliderViewController *vc = [fliderViewController new];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

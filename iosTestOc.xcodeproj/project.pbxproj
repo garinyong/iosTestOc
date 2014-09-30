@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0169FF19C421DE0064DE08 /* yunUiew.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0169FE19C421DE0064DE08 /* yunUiew.m */; };
 		EE11D26019AC58BF007B3D5C /* CoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11D25F19AC58BF007B3D5C /* CoinViewController.m */; };
 		EE11D26319AC5945007B3D5C /* CoinView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11D26219AC5945007B3D5C /* CoinView.m */; };
 		EE1E40CC19A5EC3100F8C1FB /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1E40CB19A5EC3100F8C1FB /* AnimationViewController.m */; };
@@ -53,6 +54,7 @@
 		EECE42E919A4835000E1BCBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EECE42E719A4835000E1BCBA /* InfoPlist.strings */; };
 		EECE42EB19A4835000E1BCBA /* iosTestOcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EECE42EA19A4835000E1BCBA /* iosTestOcTests.m */; };
 		EECE42F819A4903500E1BCBA /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EECE42F719A4903500E1BCBA /* bg1.jpg */; };
+		EEFC4F2019DA505D000C24B0 /* fliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFC4F1F19DA505D000C24B0 /* fliderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE0169FD19C421DE0064DE08 /* yunUiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yunUiew.h; sourceTree = "<group>"; };
+		EE0169FE19C421DE0064DE08 /* yunUiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yunUiew.m; sourceTree = "<group>"; };
 		EE11D25E19AC58BF007B3D5C /* CoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinViewController.h; sourceTree = "<group>"; };
 		EE11D25F19AC58BF007B3D5C /* CoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinViewController.m; sourceTree = "<group>"; };
 		EE11D26119AC5945007B3D5C /* CoinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinView.h; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 		EECE42E819A4835000E1BCBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EECE42EA19A4835000E1BCBA /* iosTestOcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosTestOcTests.m; sourceTree = "<group>"; };
 		EECE42F719A4903500E1BCBA /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
+		EEFC4F1E19DA505D000C24B0 /* fliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fliderViewController.h; sourceTree = "<group>"; };
+		EEFC4F1F19DA505D000C24B0 /* fliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fliderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,8 @@
 			children = (
 				EEBD942A19C3171700689DBE /* netEasyYunViewController.h */,
 				EEBD942B19C3171700689DBE /* netEasyYunViewController.m */,
+				EE0169FD19C421DE0064DE08 /* yunUiew.h */,
+				EE0169FE19C421DE0064DE08 /* yunUiew.m */,
 			);
 			path = netEasyYun;
 			sourceTree = "<group>";
@@ -309,6 +317,8 @@
 				EE9240BE19BEA434005F57FA /* guoduViewController.m */,
 				EE81B9DC19C29C680057CB07 /* TTViewController.h */,
 				EE81B9DD19C29C680057CB07 /* TTViewController.m */,
+				EEFC4F1E19DA505D000C24B0 /* fliderViewController.h */,
+				EEFC4F1F19DA505D000C24B0 /* fliderViewController.m */,
 			);
 			path = iosTestOc;
 			sourceTree = "<group>";
@@ -474,6 +484,7 @@
 				EEAEBB7019A74F6500C5EFF5 /* ZhimaViewController.m in Sources */,
 				EE2CCA7F19AD91CA000C1490 /* ParallaxViewController.m in Sources */,
 				EE9240CC19BED25C005F57FA /* PicViewCell.m in Sources */,
+				EE0169FF19C421DE0064DE08 /* yunUiew.m in Sources */,
 				EE31166519ADE8CB001DB7A8 /* bsierViewController.m in Sources */,
 				EE8562C019AB05AB00850005 /* FanYeViewController.m in Sources */,
 				EE1E40CC19A5EC3100F8C1FB /* AnimationViewController.m in Sources */,
@@ -483,6 +494,7 @@
 				EE11D26319AC5945007B3D5C /* CoinView.m in Sources */,
 				EEA5046919A7241900C0F246 /* ExampleViewController.m in Sources */,
 				EECE42CC19A4835000E1BCBA /* main.m in Sources */,
+				EEFC4F2019DA505D000C24B0 /* fliderViewController.m in Sources */,
 				EE2DF87819C1A5BB00CD5ECA /* TestMapViewController.m in Sources */,
 				EEBD942C19C3171700689DBE /* netEasyYunViewController.m in Sources */,
 				EE81B9DE19C29C680057CB07 /* TTViewController.m in Sources */,
@@ -603,10 +615,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yong Gao (VHFB68NPJA)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosTestOc/iosTestOc-Prefix.pch";
 				INFOPLIST_FILE = "iosTestOc/iosTestOc-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "765C6511-095D-4C7F-A82D-CE99BB8531C3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -616,10 +630,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yong Gao (VHFB68NPJA)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosTestOc/iosTestOc-Prefix.pch";
 				INFOPLIST_FILE = "iosTestOc/iosTestOc-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "765C6511-095D-4C7F-A82D-CE99BB8531C3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
