@@ -22,6 +22,8 @@
 #import "TTViewController.h"
 #import "netEasyYunViewController.h"
 #import "fliderViewController.h"
+#import "SLTestViewController.h"
+#import "vvCCViewController.h"
 
 @interface MainViewController ()
 
@@ -43,7 +45,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     dataArr = [NSArray arrayWithObjects:@"mao bo li",@"jerry",@"zhang jia",@"oooye",@"newlity",
-               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" ,@"shuguang" ,@"niceViewC" ,@"TTViewController" , @"yun", @"flider", nil];
+               @"juhua",@"coinhua",@"parallax",@"basier",@"PicRound" ,@"shuguang" ,@"niceViewC" ,@"TTViewController" , @"yun", @"flider",@"sessT",@"vvCC", nil];
     
     contentView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.bounds.size.height) style:UITableViewStylePlain];
     contentView.delegate = self;
@@ -186,7 +188,18 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-            
+        case 15:
+        {
+            SLTestViewController *vc = [SLTestViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 16:
+        {
+            vvCCViewController *vc = [vvCCViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
         default:
             break;
     }
